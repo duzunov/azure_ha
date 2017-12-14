@@ -1,0 +1,42 @@
+DeploymentName          : TestDeployment1
+ResourceGroupName       : TestDeploy1
+ProvisioningState       : Succeeded
+Timestamp               : 12/13/2017 7:13:55 PM
+Mode                    : Complete
+TemplateLink            :
+Parameters              :
+                          Name             Type                       Value
+                          ===============  =========================  ==========
+                          adminUsername    String                     sg_admin
+                          adminPassword    SecureString
+                          adVMSize         String                     Standard_D2_v2
+                          sqlVMSize        String                     Standard_DS3_v2
+                          witnessVMSize    String                     Standard_DS2_v2
+                          domainName       String                     contoso.com
+                          sqlServerServiceAccountUserName  String                     sqlservice
+                          sqlServerServiceAccountPassword  SecureString
+                          sqlStorageAccountName  String                     ss12311234234234
+                          sqlStorageAccountType  String                     Standard_LRS
+                          virtualNetworkAddressRange  String                     172.16.36.0/24
+                          staticSubnet     String                     172.16.36.240/28
+                          sqlSubnet        String                     172.16.36.0/27
+                          adPDCNICIPAddress  String                     172.16.36.253
+                          adBDCNICIPAddress  String                     172.16.36.254
+                          sqlLBIPAddress   String                     172.16.36.30
+                          deploymentPrefix  String                     aodns
+                          virtualNetworkName  String                     autohaVNET
+                          templatesBaseUrl  String                     https://sqlvmgroup.blob.core.windows.net/autoha07182017
+                          scriptsBaseUrl   String                     https://sqlvmgroup.blob.core.windows.net/autoha07182017
+                          autoPatchingDay  String                     Sunday
+                          autoPatchingStartHour  String                     2
+                          sqlAOAGName      String                     Contoso-ag
+                          sqlAOListenerPort  String                     1433
+                          sqlAOListenerName  String                     Contoso-listener
+                          sqlServerVersion  String                     SQL2016-WS2012R2-ENT
+                          numberOfSqlVMDisks  String                     4
+                          workloadType     String                     OLTP
+                          loadBalancersType  String                     i
+
+Outputs                 :
+DeploymentDebugLogLevel :
+
